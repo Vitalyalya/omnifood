@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.1rem rgba(230, 125, 34, 0.5);
+}
+
+/* animation styling */
+.heading-primary,
+.subheading,
+.heading-secondary,
+.heading-ter,
+.plan-price {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform 0.3s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.hero-description,
+.step-description,
+.feature,
+.list-item,
+.list-item-pricing,
+.testimonial {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform 0.5s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.text-appear {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* *** */
+*:active:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+strong {
+  font-weight: 500;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  margin: 0;
+  color: #555;
+  /* only works if nothing is absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+
+/*********************/
+/*GENERAL REUSABLE COMPONENTS*/
+/*********************/
+.heading-primary,
+.heading-secondary,
+.heading-ter {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-secondary-cta {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.2rem;
+}
+
+.heading-ter {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-center-vert {
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: #e67e22;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  display: inline-block;
+  border-radius: 9px;
+  text-decoration: none;
+  transition: all 0.3s;
+  /* only for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #cf711f;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
